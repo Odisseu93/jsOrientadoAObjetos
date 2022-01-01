@@ -1,7 +1,7 @@
 import { Cliente } from "./Cliente.js";
 export class contaCorrente{
     agencia;
-    _Cliente;// associado classe Cliente com contaCorrente
+    _cliente;// associado classe Cliente com contaCorrente
     /*#saldo = 0 https://github.com/Odisseu93/proposal-class-fields */
     _saldo = 0;
 
@@ -9,22 +9,26 @@ export class contaCorrente{
 
 
 
-   set Cliente(noValor){
+   set cliente(noValor){
         if(noValor instanceof Cliente){
-            this._Cliente = noValor;
+            this._cliente = noValor;
         }
     } 
     get cliente(){
-        return this._Cliente;
+        return this._cliente;
     }
 
     get saldo(){
         return this._saldo;
     }
 
+    constructor(cliente,agencia) {
+        this.agencia =  agencia;
+        this.cliente = cliente;
+      
+    }
 
 
-    
     sacar(valor){
         if(this._saldo >= valor){
             this._saldo -= valor;
