@@ -1,4 +1,4 @@
-# Curso da alura "JavaScript: Programando a Orientação a Objetos" - prof.[Ricardo Bugan Debs](https://www.linkedin.com/in/ricardo-bugan-b0581379/)
+# Curso da alura "JavaScript: Programando a Orientação a Objetos" - prof. [Ricardo Bugan Debs](https://www.linkedin.com/in/ricardo-bugan-b0581379/)
 ---
 ## Contéudo estudado:
 - Domine o paradigma de programação mais usado no mercado
