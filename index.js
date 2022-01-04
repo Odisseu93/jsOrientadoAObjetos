@@ -6,11 +6,12 @@ const cliente2 = new Cliente("Alice", 88822233309);
 
 const contaCorrenteRicardo = new contaCorrente(1001, cliente1);
 contaCorrenteRicardo.depositar(500);
-contaCorrenteRicardo.Cliente = cliente1;
 
 
 const conta2 = new contaCorrente(cliente2, 102);
 contaCorrenteRicardo.transfirir(200, conta2);
 
-console.log(cliente2);
+
+console.log(contaCorrente.numeroDeContas);
+//console.log(conta2);
 

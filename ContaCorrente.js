@@ -1,5 +1,6 @@
 import { Cliente } from "./Cliente.js";
 export class contaCorrente{
+    static numeroDeContas = 0; // declatacao de variavel estatica
     agencia;
     _cliente;// associado classe Cliente com contaCorrente
     /*#saldo = 0 https://github.com/Odisseu93/proposal-class-fields */
@@ -22,10 +23,10 @@ export class contaCorrente{
         return this._saldo;
     }
 
-    constructor(cliente,agencia) {
+    constructor(agencia,cliente) {
         this.agencia =  agencia;
         this.cliente = cliente;
-      
+        contaCorrente.numeroDeContas++; // acessando variavel estatica
     }
 
 
