@@ -1,6 +1,4 @@
 export class Cliente{ //exportando o modulo
-    nome;
-    _cpf;
 
 
     get cpf(){
